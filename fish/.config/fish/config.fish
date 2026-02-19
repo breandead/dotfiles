@@ -4,7 +4,7 @@ set --universal pure_enable_single_line_prompt true
 bind ctrl-d ''
 
 if status is-interactive
-    # Commands to run in interactive sessions can go here
+    set -g fish_key_bindings fish_vi_key_bindings
 end
 
 # Created by `pipx` on 2025-10-20 14:00:53
