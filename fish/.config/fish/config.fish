@@ -7,7 +7,6 @@ if status is-interactive
     set -g fish_key_bindings fish_vi_key_bindings
 end
 
-# Created by `pipx` on 2025-10-20 14:00:53
 set PATH $PATH /home/lenar/.local/bin
 
 if type -q tmux
