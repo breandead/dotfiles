@@ -45,8 +45,8 @@ opt.completeopt = 'menuone,noselect'
 
 opt.termguicolors = true
 
--- Set a colored line at 80 chars
-opt.colorcolumn = "79"
+-- Set a colored line at 120 chars
+opt.colorcolumn = "119"
 
 vim.diagnostic.config({ virtual_text = {current_line = true} })
 
