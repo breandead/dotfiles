@@ -19,7 +19,7 @@
 
 # Ugly hack that probably doesn't work on your monitor
 # Force xrandr to use the correct res and rate
-exec xrandr --output DP-2 --mode 2560x1440 --rate 170
+exec xrandr --output DP-0 --mode 2560x1440 --rate 170
 
 # Start IME for japanese typing
 exec_always --no-startup-id fcitx5 -d
@@ -129,6 +129,9 @@ bindcode $mod+Shift+18    move container to workspace  $ws9
 
 # start a terminal
 bindsym $mod+Return exec --no-startup-id kitty
+
+# start rofi calc
+bindsym $mod+m exec --no-startup-id "rofi -show calc -modi calc -no-show-match -no-sort -no-persist-history"
 
 # kill focused window
 bindsym $mod+q kill

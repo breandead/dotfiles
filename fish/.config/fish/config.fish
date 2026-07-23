@@ -3,15 +3,11 @@ set --universal pure_enable_single_line_prompt true
 
 bind ctrl-d ''
 
-if status is-interactive
-    set -g fish_key_bindings fish_vi_key_bindings
-end
-
-set PATH $PATH /home/lenar/.local/bin
+set PATH $PATH $HOME/.local/bin $HOME/opt/walnutCross/bin
 
 if type -q tmux
     if not test -n "$TMUX"
-        tmux attach-session -t default; or tmux new-session -s default
+        tmux new-session -s default
     end
 end
 
