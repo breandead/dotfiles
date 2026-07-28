@@ -19,7 +19,7 @@
 
 # Ugly hack that probably doesn't work on your monitor
 # Force xrandr to use the correct res and rate
-exec xrandr --output DP-0 --mode 2560x1440 --rate 170
+exec xrandr --output DP-1 --mode 2560x1440 --rate 170
 
 # Start IME for japanese typing
 exec_always --no-startup-id fcitx5 -d
