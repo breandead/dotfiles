@@ -6,6 +6,8 @@ local function setup_treesitter()
         },
       },
     })
+
+    require("nvim-treesitter").install({'c', 'cpp', 'rust'})
 end
 
 return {
